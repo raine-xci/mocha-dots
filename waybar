@@ -4,7 +4,9 @@
         "margin-right": 10,
         "height" : 30,
         "modules-left": [
-            "hyprland/window"
+            "hyprland/window" ,
+	   "cpu" ,
+	   "memory"
         ],
         "modules-center": [
             "hyprland/workspaces",
@@ -12,13 +14,12 @@
         "modules-right": [
             "pulseaudio",
         "network",
-        "temperature",
         "battery",
         "clock",
         ],
         "hyprland/window": {
             "format": "{}",
-            "max-length": 35,
+            "max-length": 10,
             "rewrite": {
   		"": "Hyprland"
   	},
@@ -41,11 +42,11 @@
             "format-alt": "{:%Y-%m-%d}"
         },
         "cpu": {
-            "format": "  {usage}%",
+            "format": "  {usage}%  ",
             "tooltip": false
         },
         "memory": {
-            "format": "{}%  "
+            "format": "{}%  ",
         },
         "temperature": {
             "critical-threshold": 80,
@@ -62,7 +63,7 @@
             "format-charging": "  {capacity}%",
             "format-plugged": "  {capacity}%",
             "format-alt": "{time} {icon}",
-            "format-icons": ["", "", "", "", ""]
+            "format-icons": [" ", " ", " ", " ", " "]
         },
         "network": {
             "format-wifi": "  {signalStrength}%",
