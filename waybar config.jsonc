@@ -5,8 +5,8 @@
         "height" : 30,
         "modules-left": [
             "hyprland/window" ,
-	   "cpu" ,
-	   "memory"
+	  "cpu" ,
+	  "memory"
         ],
         "modules-center": [
             "hyprland/workspaces",
@@ -71,7 +71,7 @@
             "tooltip-format": "{ifname} via {gwaddr}  ",
             "format-linked": "{ifname} (No IP)  ",
             "format-disconnected": " ⚠ ",
-            "format-alt": "{ifname}: {ipaddr}/{cidr}"
+            "format-alt": "{ifname}: {essid}"
         },
         "pulseaudio": {
             "format": "{icon}  {volume}%",
