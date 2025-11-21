@@ -8,4 +8,6 @@ eval "$(starship init bash)"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
 PS1='[\u@\h \W]\$ '
