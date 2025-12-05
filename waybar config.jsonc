@@ -1,6 +1,8 @@
 {
 	"layer": "top",
 	"position": "top",
+  "height": 1,
+  "margin-top": 0,
 	"modules-left": [
 		"clock",
 		"hyprland/workspaces"
@@ -25,7 +27,7 @@
 		"format-icons": {
 			"1": "",
 			"2": "󰖟",
-			"3": "",
+			"3": "",
 			"4": "󰎉",
 			"5": "",
 			"default": ""
@@ -36,7 +38,7 @@
 		"spacing": 5
 	},
 	"custom/music": {
-		"format": "  {}",
+		"format": "  {}",
 		"escape": true,
 		"interval": 5,
 		"tooltip": false,
@@ -92,16 +94,21 @@
 			"warning": 30,
 			"critical": 15
 		},
-		"format": "{icon}",
+		"format": "{capacity}%  {icon}",
 		"format-charging": "{capacity}% 󰂄",
 		"format-plugged": "{capacity}% ",
 		"format-alt": "{icon}",
 		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"󰁺",
+			"󰁻",
+			"󰁼",
+			"󰁽",
+			"󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
 		]
 	},
 	"pulseaudio": {
