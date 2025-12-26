@@ -23,9 +23,8 @@ $python\
 $conda\
 [](fg:sapphire bg:lavender)\
 $time\
-[ ](fg:lavender)\
-$cmd_duration\
-$line_break\
+[](fg:lavender)\
+$status
 $character"""
 
 palette = 'catppuccin_mocha'
