@@ -8,11 +8,14 @@
 		"hyprland/workspaces"
 	],
 	"modules-center": [
-		"custom/music"
+		"custom/music",
+		"cava"
 	],
 	"modules-right": [
 		"pulseaudio",
+		"network",
 		"backlight",
+		"power-profiles-daemon",
 		"battery",
 		"tray",
 		"custom/lock",
@@ -25,20 +28,31 @@
 		"format": "{icon}",
 		"all-outputs": true,
 		"format-icons": {
-			"1": "",
-			"2": "󰖟",
-			"3": "",
-			"4": "󰎉",
-			"5": "",
+			"1": "  ",
+			"2": " 󰖟 ",
+			"3": "  ",
+			"4": " 󰎉 ",
+			"5": "  ",
 			"default": ""
 		}
+	},
+		"network": {
+		"format-wifi": "{icon} {essid}",
+    		"format-ethernet": "󰈀 connected",
+    		"format-disconnected": "󰤭 disconnected",
+    		"on-click": "nm-connection-editor",
+    		"tooltip": " signal strength ({signalStrength}%) ",
+  		"format-icons": [
+				"󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "
+		]
+
 	},
 	"tray": {
 		"icon-size": 16,
 		"spacing": 5
 	},
 	"custom/music": {
-		"format": "  {}",
+		"format": "  {}  ",
 		"escape": true,
 		"interval": 5,
 		"tooltip": false,
@@ -73,6 +87,7 @@
 	},
 	"backlight": {
 		"device": "nvidia_0",
+		"tooltip": false,
 		"format": "{icon}",
 		"on-scroll-up": "brightnessctl s '+10%'",
 		"on-scroll-down": "brightnessctl s '10%-'",
@@ -104,11 +119,11 @@
 			"󰁼",
 			"󰁽",
 			"󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
+			"󰁿",
+			"󰂀",
+      			"󰂁",
+      			"󰂂",
+      			"󰁹"
 		]
 	},
 	"pulseaudio": {
@@ -131,7 +146,18 @@
 	},
 	"custom/power": {
 		"tooltip": false,
-		"on-click": "exit",
+		"on-click": "hyprctl dispatch exit ",
 		"format": "⏻"
+	},
+	"power-profiles-daemon": {
+		"format": "{icon}",
+		"tooltip-format": "{profile}",
+		"tooltip": true,
+		"format-icons":{
+			"default": "󰾅 ",
+			"performance": "󰓅 ",
+			"balanced": "󰾅 ",
+			"power-saver": "󰾆 "
+		}
 	}
 }
