@@ -17,7 +17,7 @@
   border-radius: 9px;
   margin: 5px;
   background-color: @surface0;
-  margin-left: 2px;
+  margin-left: 8px;
 }
 
 #workspaces button {
@@ -45,10 +45,12 @@ button {
 #backlight,
 #clock,
 #battery,
+#network,
 #pulseaudio,
 #custom-lock,
 #language,
 #cava,
+#power-profiles-daemon,
 #custom-power {
   background-color: @surface0;
   padding: 0.5rem 1rem;
@@ -64,16 +66,26 @@ button {
   color: @green;
 }
 
+#network {
+  color: @blue;
+  background-color: @surface0;
+
+}
+
 #battery.charging {
   color: @green;
 }
 
 #battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
   color: @red;
 }
 
 #backlight {
-  color: @yellow;
+  color: @teal;
 }
 
 #backlight,
@@ -92,6 +104,12 @@ button {
   margin-left: 5px;
   margin-right: 0;
   padding-right: 0;
+}
+
+#power-profiles-daemon {
+  color: @mauve;
+  background-color: @surface0;
+  font-size: 14px;
 }
 
 #custom-music {
