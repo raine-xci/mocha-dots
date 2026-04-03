@@ -30,7 +30,8 @@ $character"""
 palette = 'catppuccin_mocha'
 
 [os]
-disabled = false
+symbol = "󰈉"
+disabled = true #set false for distro auto select
 style = "bg:red fg:surface0"
 
 [os.symbols]
@@ -54,7 +55,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-EndeavourOS = ""
+EndeavourOS = "󰈉"
 
 [username]
 show_always = true
