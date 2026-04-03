@@ -31,32 +31,11 @@ palette = 'catppuccin_mocha'
 
 [os]
 symbol = "󰈉"
-disabled = true #set false for distro auto select
+disabled = false 
 style = "bg:red fg:surface0"
 
 [os.symbols]
-Windows = ""
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-AOSC = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
 EndeavourOS = "󰈉"
-
 [username]
 show_always = true
 style_user = "bg:red fg:crust"
